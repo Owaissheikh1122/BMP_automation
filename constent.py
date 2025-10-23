@@ -1,0 +1,118 @@
+#WEB-SITE URL
+WEB_URL = "https://admin.businessesify.com"
+
+#CREDENTIALS
+EMAIL = "automobile@businessesify.com"
+PASSWORD = "Polo@1234"
+# EMAIL = "tapanew768@bitfami.com"
+# PASSWORD = "Awais1234@"
+
+# FIELDS KEY
+FIRST_KEY = "sheikh"
+LAST_KEY = "owais"
+CONFIRM_PASSWORD_KEY = "12345678"
+DROP_DOWN_KEY = "user" 
+NEW_PASSWORD_KEY = "12345678"
+PHONE_NO_KEY = "+92123123123" 
+EMAIL_KEY = "owais123@gmail.com"
+DRVING_LIC_KEY = "123456"
+CNIC_KEY = "42201-12121212"
+BUS_ADD_KEY = "businessaddress"
+MAIL_ADD_KEY = "mailingaddress"
+AFF_VEH_KEY = "5"
+ACC_IBAN_KEY = "ass12345678"
+BIC_KEY = "12345678"
+P_METHOD_KEY = "CASH"
+P_TERMS_KEY = "30 DAYS ADVANCE"
+NOTE_KEY = "instructions"
+BANK_NAME_KEY = "HBL"
+ACC_HOLDER_KEY = "S M OWAIS"
+
+
+
+
+#FIELDS PATH 
+EMAIL_NAME = "email"
+PASSWORD_NAME = "password"
+FIRST_NAME = "first_name"
+LAST_NAME = "last_name"
+NEW_PASSWORD_NAME = "password"
+CONFIRM_PASSWORD_NAME = "confirmpassword"
+FORGOT_PASSWORD_XPATH = "/html/body/section/div/div[3]/div[2]/section/form/span"
+FORGOT_SUBMIT_XPATH = "/html/body/section/div/div[3]/div[2]/form/button"
+PHONE_NO = "phone" 
+LOGIN_BUTTON_XPATH = "/html/body/section/div/div[1]/nav/div[3]/div[2]/div/div/button" 
+SIGN_BUTTON_XPATH = "/html/body/section/div/div[3]/div[2]/section/form/div[5]/p[2]" 
+LOGIN_SUBMIT_BUTTON_XPATH = "/html/body/div[1]/div[2]/div/div/div[3]/form/button"
+SIGNUP_SUBMIT_BUTTON_XPATH = "/html/body/section/div/div[3]/div[2]/section/form/div[1]/div/div[9]/button"
+CHECK_BOX_NAME = "agreed" 
+DROP_DOWN_ID = "react-select-4-input" 
+AFFILIATE_BUTT0N = "/html/body/div[1]/div/div[2]/div/div[2]/div/div/ul/li[8]"
+BOOKING_BUTT0N = "/html/body/div[1]/div/div[2]/div/div[2]/div/div/ul/li[7]"
+ADD_AFFILIATE_BUTTON = "/html/body/div[1]/main/div/div/div/div/div[3]/button"
+ADD_BOOKING_BUTTON = "/html/body/div[1]/main/div/div/div/div/div[3]/button"
+DRVING_LIC = "driving_license_no"
+CNIC = "cnic_passport"
+BUS_ADD = "business_address"
+MAIL_ADD = "mailing_address"
+AFF_VEH = "vehicles_affiliated"
+ACC_IBAN = "ac_number"
+BIC = "swift_code"
+P_METHOD = "payment_method_preference"
+P_TERMS = "payment_terms"
+NOTE = "instructions"
+FORM_SUBMIT = "//button[normalize-space()='Save']"
+BANK_NAME = "bank_name"
+ACC_HOLDER = "ac_title"
+
+
+
+#form field
+UPLOAD_PROFILE = "//input[@type='file']"
+PROF_ADDRESS = "(//input[@type='file'])[2]"
+INS_CERTIFICATE = "(//input[@type='file'])[3]"
+BANK_VER = "(//input[@type='file'])[4]"
+
+#booking form field
+SELECT_CUSTOMER = "//label[normalize-space()='Select Customer']/preceding-sibling::div//input"
+SELECT_VEHICLE = "//label[normalize-space()='Select Vehicle']/preceding::input[1]"
+SELECT_FUEL_LEVEL = "//label[normalize-space()='Fuel Level']/preceding::input[1]"
+EXTERIOR_CONDITION = "//label[normalize-space()='Exterior Condition']/preceding::input[1]"
+INTERIOR_CONDITION = "//label[normalize-space()='Interior Condition']/preceding::input[1]"
+TYRE_CONDITION = "//label[normalize-space()='Tyre Condition']/preceding::input[1]"
+SPARE_TYRE = "//label[normalize-space()='Spare Tyre']/preceding::input[1]"
+TOOLKIT = "//label[normalize-space()='Toolkit']/preceding::input[1]"
+MILEAGE_PICKUP = "//label[normalize-space()='Mileage At Pickup']/preceding::input[1]"
+MILEAGE_LIMIT = "//label[normalize-space()='Mileage Limit']/preceding::input[1]"
+PICKUP_TIME = "//label[normalize-space(text())='Pickup Time']/preceding-sibling::div//input"
+RETURN_TIME = "//label[normalize-space(text())='Return Time']/preceding-sibling::div//input"
+PICKUP_LOCATION = "//input[@name='pickup_location']"
+DROP_OFF_LOCATION = "//input[@name='dropoff_location']"
+CONFIRM_BOOKING = "//input[@name='confirm_booking']/following-sibling::div"
+
+
+#customer Data
+CONTACT_NAME = "contact"
+DRIVING_LIC_NAME = "driving_license_no"
+PASSPORT_NAME = "passport_id"
+VISA_NAME = "visa_no"
+ADDRESS1_NAME = "address1"
+ADDRESS2_NAME = "address2"
+POSTAL_NAME = "postal_code"
+
+#Company Data
+COMPANY_NAME = "company_name"
+CONTACT_PERSON = "contact_person"
+TRADE_LIC_NO = "trade_license_no"
+CONTACT_CNIC = "contact_cnic"
+
+#payment 
+ACTION_BUTTON = "(//button[@data-slot='dropdown-menu-trigger'])[1]"
+POS_BUTTON = "//div[@role='menuitem' and text()='POS Payment']"
+TRANSACTION_NAME = "transaction_id"
+TERMINAL_NAME = "terminal_id"
+RECEIPT_NAME = "receipt_no"
+PAYMENT_NOTE_NAME = "payment_note"
+CUSTOMER_NOTE_NAME = "customer_note"
+
+
