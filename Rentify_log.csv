@@ -1,0 +1,454 @@
+Timestamp,Test Case,Step,Status,Message
+2025-10-23 19:17:32,Brand Creation,Open Website,PASS,
+2025-10-23 19:17:35,Brand Creation,Login,PASS,
+2025-10-23 19:17:41,Brand Creation,Navigate to Brand,PASS,
+2025-10-23 19:17:42,Brand Creation,Upload Profile Image,PASS,
+2025-10-23 19:17:48,Brand Creation,Upload Register Document,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 58, in fill_field
+    element = wait.until(EC.presence_of_element_located((locator_type, locator)))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 104, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.107)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff66471060f]
+	(No symbol) [0x0x7ff6646fc145]
+	(No symbol) [0x0x7ff66472177a]
+	(No symbol) [0x0x7ff664798b06]
+	(No symbol) [0x0x7ff6647b8fa2]
+	(No symbol) [0x0x7ff664791003]
+	(No symbol) [0x0x7ff6647595d1]
+	(No symbol) [0x0x7ff66475a3f3]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	GetHandleVerifier [0x0x7ff664997b24+117460]
+	GetHandleVerifier [0x0x7ff664997cdf+117903]
+	GetHandleVerifier [0x0x7ff66497dbb8+11112]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Upload First Name,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 58, in fill_field
+    element = wait.until(EC.presence_of_element_located((locator_type, locator)))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 104, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Upload Last Name,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 58, in fill_field
+    element = wait.until(EC.presence_of_element_located((locator_type, locator)))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 104, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Upload Contact Number,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 58, in fill_field
+    element = wait.until(EC.presence_of_element_located((locator_type, locator)))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 104, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Upload Email Address,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 58, in fill_field
+    element = wait.until(EC.presence_of_element_located((locator_type, locator)))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 104, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Upload Driving License,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 58, in fill_field
+    element = wait.until(EC.presence_of_element_located((locator_type, locator)))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 104, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Enter Driving Lic Expiry,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 122, in test_login_valid
+    Driving_Lic = wait.until(
+     EC.element_to_be_clickable((By.XPATH, ""//label[contains(text(),'Driving License Expiry Date')]/preceding::input[1]"")))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 622, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Upload Passport ID,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 58, in fill_field
+    element = wait.until(EC.presence_of_element_located((locator_type, locator)))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 104, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Enter Passport ID Expiry,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 135, in test_login_valid
+    Driving_Lic = wait.until(
+     EC.element_to_be_clickable((By.XPATH, ""//label[contains(text(),'Passport Expiry Date')]/preceding::input[1]"")))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 622, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Upload Visa Number,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 58, in fill_field
+    element = wait.until(EC.presence_of_element_located((locator_type, locator)))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 104, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Enter Visa Expiry,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 147, in test_login_valid
+    Driving_Lic = wait.until(
+     EC.element_to_be_clickable((By.XPATH, ""//label[contains(text(),'Visa Expiry Date')]/preceding::input[1]"")))
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 622, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-23 19:17:49,Brand Creation,Select Nationality,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 158, in test_login_valid
+    wait.until(EC.element_to_be_clickable((By.XPATH, ""//label[contains(text(),'Nationality')]/preceding::input[1]""))).click()
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 129, in until
+    value = method(self._driver)
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py"", line 622, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {""using"": by, ""value"": value})[""value""]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py"", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py"", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66498e8e5+80021]
+	GetHandleVerifier [0x0x7ff66498e940+80112]
+	(No symbol) [0x0x7ff664710425]
+	(No symbol) [0x0x7ff66475864f]
+	(No symbol) [0x0x7ff6647910f2]
+	(No symbol) [0x0x7ff66478b89f]
+	(No symbol) [0x0x7ff66478a94a]
+	(No symbol) [0x0x7ff6646da765]
+	GetHandleVerifier [0x0x7ff664c4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff664c47f3a+2936554]
+	GetHandleVerifier [0x0x7ff664c68977+3070247]
+	GetHandleVerifier [0x0x7ff6649a83ce+185214]
+	GetHandleVerifier [0x0x7ff6649afe1f+216527]
+	(No symbol) [0x0x7ff6646d970e]
+	GetHandleVerifier [0x0x7ff664d86a68+4241944]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"

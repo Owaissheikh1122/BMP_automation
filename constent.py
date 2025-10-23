@@ -48,9 +48,12 @@ SIGNUP_SUBMIT_BUTTON_XPATH = "/html/body/section/div/div[3]/div[2]/section/form/
 CHECK_BOX_NAME = "agreed" 
 DROP_DOWN_ID = "react-select-4-input" 
 AFFILIATE_BUTT0N = "/html/body/div[1]/div/div[2]/div/div[2]/div/div/ul/li[8]"
+RENTIFY_BUTT0N = "/html/body/div[1]/div/div[2]/div/div[2]/div/div/ul/li[6]"
 BOOKING_BUTT0N = "/html/body/div[1]/div/div[2]/div/div[2]/div/div/ul/li[7]"
 ADD_AFFILIATE_BUTTON = "/html/body/div[1]/main/div/div/div/div/div[3]/button"
 ADD_BOOKING_BUTTON = "/html/body/div[1]/main/div/div/div/div/div[3]/button"
+ADD_BRAND_BUTTON = "//button[text()='Add Brands']"
+BRAND_BUTTON = "//a[text()='Brands'][1]"
 DRVING_LIC = "driving_license_no"
 CNIC = "cnic_passport"
 BUS_ADD = "business_address"
@@ -115,4 +118,7 @@ RECEIPT_NAME = "receipt_no"
 PAYMENT_NOTE_NAME = "payment_note"
 CUSTOMER_NOTE_NAME = "customer_note"
 
-
+#Rentify Brand Data
+BRAND_NAME = "title"
+BRAND_AR_NAME = "title_ar"
+SELECT_COUNTRY = "//label[normalize-space()='Country of origin']/preceding::input[1]"
