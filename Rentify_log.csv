@@ -452,3 +452,372 @@ Stacktrace:
 	RtlUserThreadStart [0x0x7ff9128fcc91+33]
 
 "
+2025-10-24 11:26:47,Brand Creation,Open Website,PASS,
+2025-10-24 11:26:49,Brand Creation,Login,PASS,
+2025-10-24 11:26:54,Brand Creation,Navigate to Brand,PASS,
+2025-10-24 11:26:54,Brand Creation,Upload Profile Image,PASS,
+2025-10-24 11:26:54,Brand Creation,Upload Brand,PASS,
+2025-10-24 11:26:54,Brand Creation,Upload Brand_AR,PASS,
+2025-10-24 11:27:05,Brand Creation,Select Country,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 119, in test_login_valid
+    wait.until(EC.element_to_be_clickable(
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (By.XPATH, ""//div[text()='American']""))).click()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6b3e1e8e5+80021]
+	GetHandleVerifier [0x0x7ff6b3e1e940+80112]
+	(No symbol) [0x0x7ff6b3ba060f]
+	(No symbol) [0x0x7ff6b3bf8854]
+	(No symbol) [0x0x7ff6b3bf8b1c]
+	(No symbol) [0x0x7ff6b3c4c927]
+	(No symbol) [0x0x7ff6b3c2126f]
+	(No symbol) [0x0x7ff6b3c4968a]
+	(No symbol) [0x0x7ff6b3c21003]
+	(No symbol) [0x0x7ff6b3be95d1]
+	(No symbol) [0x0x7ff6b3bea3f3]
+	GetHandleVerifier [0x0x7ff6b40ddc7d+2960429]
+	GetHandleVerifier [0x0x7ff6b40d7f3a+2936554]
+	GetHandleVerifier [0x0x7ff6b40f8977+3070247]
+	GetHandleVerifier [0x0x7ff6b3e383ce+185214]
+	GetHandleVerifier [0x0x7ff6b3e3fe1f+216527]
+	GetHandleVerifier [0x0x7ff6b3e27b24+117460]
+	GetHandleVerifier [0x0x7ff6b3e27cdf+117903]
+	GetHandleVerifier [0x0x7ff6b3e0dbb8+11112]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-24 11:27:36,Brand Creation,Open Website,PASS,
+2025-10-24 11:27:37,Brand Creation,Login,PASS,
+2025-10-24 11:27:41,Brand Creation,Navigate to Brand,PASS,
+2025-10-24 11:27:42,Brand Creation,Upload Profile Image,PASS,
+2025-10-24 11:27:42,Brand Creation,Upload Brand,PASS,
+2025-10-24 11:27:42,Brand Creation,Upload Brand_AR,PASS,
+2025-10-24 11:27:53,Brand Creation,Select Country,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_brand.py"", line 119, in test_login_valid
+    wait.until(EC.element_to_be_clickable(
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (By.XPATH, ""//div[text()='American']""))).click()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6b3e1e8e5+80021]
+	GetHandleVerifier [0x0x7ff6b3e1e940+80112]
+	(No symbol) [0x0x7ff6b3ba060f]
+	(No symbol) [0x0x7ff6b3bf8854]
+	(No symbol) [0x0x7ff6b3bf8b1c]
+	(No symbol) [0x0x7ff6b3c4c927]
+	(No symbol) [0x0x7ff6b3c2126f]
+	(No symbol) [0x0x7ff6b3c4968a]
+	(No symbol) [0x0x7ff6b3c21003]
+	(No symbol) [0x0x7ff6b3be95d1]
+	(No symbol) [0x0x7ff6b3bea3f3]
+	GetHandleVerifier [0x0x7ff6b40ddc7d+2960429]
+	GetHandleVerifier [0x0x7ff6b40d7f3a+2936554]
+	GetHandleVerifier [0x0x7ff6b40f8977+3070247]
+	GetHandleVerifier [0x0x7ff6b3e383ce+185214]
+	GetHandleVerifier [0x0x7ff6b3e3fe1f+216527]
+	GetHandleVerifier [0x0x7ff6b3e27b24+117460]
+	GetHandleVerifier [0x0x7ff6b3e27cdf+117903]
+	GetHandleVerifier [0x0x7ff6b3e0dbb8+11112]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-24 11:52:08,Brand Creation,Open Website,PASS,
+2025-10-24 11:52:11,Brand Creation,Login,PASS,
+2025-10-24 11:52:27,Brand Creation,Navigate to Brand,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_models.py"", line 103, in test_login_valid
+    wait.until(EC.element_to_be_clickable(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (By.XPATH, constent.ADD_MODELS_BUTTON))).click()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71bade8e5+80021]
+	GetHandleVerifier [0x0x7ff71bade940+80112]
+	(No symbol) [0x0x7ff71b86060f]
+	(No symbol) [0x0x7ff71b8b8854]
+	(No symbol) [0x0x7ff71b8b8b1c]
+	(No symbol) [0x0x7ff71b90c927]
+	(No symbol) [0x0x7ff71b8e126f]
+	(No symbol) [0x0x7ff71b90968a]
+	(No symbol) [0x0x7ff71b8e1003]
+	(No symbol) [0x0x7ff71b8a95d1]
+	(No symbol) [0x0x7ff71b8aa3f3]
+	GetHandleVerifier [0x0x7ff71bd9dc7d+2960429]
+	GetHandleVerifier [0x0x7ff71bd97f3a+2936554]
+	GetHandleVerifier [0x0x7ff71bdb8977+3070247]
+	GetHandleVerifier [0x0x7ff71baf83ce+185214]
+	GetHandleVerifier [0x0x7ff71baffe1f+216527]
+	GetHandleVerifier [0x0x7ff71bae7b24+117460]
+	GetHandleVerifier [0x0x7ff71bae7cdf+117903]
+	GetHandleVerifier [0x0x7ff71bacdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-24 11:56:33,Models Creation,Open Website,PASS,
+2025-10-24 11:56:34,Models Creation,Login,PASS,
+2025-10-24 11:56:40,Models Creation,Navigate To Models,PASS,
+2025-10-24 11:56:40,Models Creation,Upload Profile Image,PASS,
+2025-10-24 11:56:40,Models Creation,Upload Models,PASS,
+2025-10-24 11:56:40,Models Creation,Upload Model_AR,PASS,
+2025-10-24 11:56:41,Models Creation,Submit Form,PASS,
+2025-10-24 11:56:46,Toast Message,FAIL,"No toast captured: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71bade8e5+80021]
+	GetHandleVerifier [0x0x7ff71bade940+80112]
+	(No symbol) [0x0x7ff71b86060f]
+	(No symbol) [0x0x7ff71b8b8854]
+	(No symbol) [0x0x7ff71b8b8b1c]
+	(No symbol) [0x0x7ff71b90c927]
+	(No symbol) [0x0x7ff71b8e126f]
+	(No symbol) [0x0x7ff71b90968a]
+	(No symbol) [0x0x7ff71b8e1003]
+	(No symbol) [0x0x7ff71b8a95d1]
+	(No symbol) [0x0x7ff71b8aa3f3]
+	GetHandleVerifier [0x0x7ff71bd9dc7d+2960429]
+	GetHandleVerifier [0x0x7ff71bd97f3a+2936554]
+	GetHandleVerifier [0x0x7ff71bdb8977+3070247]
+	GetHandleVerifier [0x0x7ff71baf83ce+185214]
+	GetHandleVerifier [0x0x7ff71baffe1f+216527]
+	GetHandleVerifier [0x0x7ff71bae7b24+117460]
+	GetHandleVerifier [0x0x7ff71bae7cdf+117903]
+	GetHandleVerifier [0x0x7ff71bacdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+",
+2025-10-24 12:01:17,Models Creation,Open Website,PASS,
+2025-10-24 12:01:19,Models Creation,Login,PASS,
+2025-10-24 12:01:24,Models Creation,Navigate To Models,PASS,
+2025-10-24 12:01:24,Models Creation,Upload Profile Image,PASS,
+2025-10-24 12:01:25,Models Creation,Upload Models,PASS,
+2025-10-24 12:01:25,Models Creation,Upload Model_AR,PASS,
+2025-10-24 12:01:35,Models Creation,Select Country,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_models.py"", line 118, in test_login_valid
+    wait.until(EC.element_to_be_clickable((By.XPATH, constent.SELECT_BRAND))).click()
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71bade8e5+80021]
+	GetHandleVerifier [0x0x7ff71bade940+80112]
+	(No symbol) [0x0x7ff71b86060f]
+	(No symbol) [0x0x7ff71b8b8854]
+	(No symbol) [0x0x7ff71b8b8b1c]
+	(No symbol) [0x0x7ff71b90c927]
+	(No symbol) [0x0x7ff71b8e126f]
+	(No symbol) [0x0x7ff71b90968a]
+	(No symbol) [0x0x7ff71b8e1003]
+	(No symbol) [0x0x7ff71b8a95d1]
+	(No symbol) [0x0x7ff71b8aa3f3]
+	GetHandleVerifier [0x0x7ff71bd9dc7d+2960429]
+	GetHandleVerifier [0x0x7ff71bd97f3a+2936554]
+	GetHandleVerifier [0x0x7ff71bdb8977+3070247]
+	GetHandleVerifier [0x0x7ff71baf83ce+185214]
+	GetHandleVerifier [0x0x7ff71baffe1f+216527]
+	GetHandleVerifier [0x0x7ff71bae7b24+117460]
+	GetHandleVerifier [0x0x7ff71bae7cdf+117903]
+	GetHandleVerifier [0x0x7ff71bacdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-24 12:03:10,Models Creation,Open Website,PASS,
+2025-10-24 12:03:13,Models Creation,Login,PASS,
+2025-10-24 12:03:22,Models Creation,Navigate To Models,PASS,
+2025-10-24 12:03:22,Models Creation,Upload Profile Image,PASS,
+2025-10-24 12:03:22,Models Creation,Upload Models,PASS,
+2025-10-24 12:03:22,Models Creation,Upload Model_AR,PASS,
+2025-10-24 12:03:23,Models Creation,Select Brand,PASS,
+2025-10-24 12:03:23,Models Creation,Submit Form,PASS,
+2025-10-24 12:03:27,Toast Message,PASS,Record Saved,
+2025-10-24 12:03:40,Models Creation,Open Website,PASS,
+2025-10-24 12:03:42,Models Creation,Login,PASS,
+2025-10-24 12:03:49,Models Creation,Navigate To Models,PASS,
+2025-10-24 12:03:49,Models Creation,Upload Profile Image,PASS,
+2025-10-24 12:03:49,Models Creation,Upload Models,PASS,
+2025-10-24 12:03:49,Models Creation,Upload Model_AR,PASS,
+2025-10-24 12:03:50,Models Creation,Select Brand,PASS,
+2025-10-24 12:03:50,Models Creation,Submit Form,PASS,
+2025-10-24 12:03:53,Toast Message,PASS,Record Saved,
+2025-10-24 12:05:30,Models Creation,Open Website,PASS,
+2025-10-24 12:05:32,Models Creation,Login,PASS,
+2025-10-24 12:05:37,Models Creation,Navigate To Models,PASS,
+2025-10-24 12:05:37,Models Creation,Upload Profile Image,PASS,
+2025-10-24 12:05:38,Models Creation,Upload Models,PASS,
+2025-10-24 12:05:38,Models Creation,Upload Model_AR,PASS,
+2025-10-24 12:05:38,Models Creation,Select Brand,PASS,
+2025-10-24 12:05:39,Models Creation,Submit Form,PASS,
+2025-10-24 12:05:42,Toast Message,PASS,Record Saved,
+2025-10-24 12:13:54,Variant Creation,Open Website,PASS,
+2025-10-24 12:13:56,Variant Creation,Login,PASS,
+2025-10-24 12:14:02,Variant Creation,Navigate To Variant,PASS,
+2025-10-24 12:14:03,Variant Creation,Upload Variant,PASS,
+2025-10-24 12:14:03,Variant Creation,Upload Variant_AR,PASS,
+2025-10-24 12:14:03,Variant Creation,Select Brand,PASS,
+2025-10-24 12:14:14,Variant Creation,Select Model,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_varient.py"", line 98, in test_login_valid
+    wait.until(EC.element_to_be_clickable((By.XPATH, constent.SELECT_MODEL))).click()
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71bade8e5+80021]
+	GetHandleVerifier [0x0x7ff71bade940+80112]
+	(No symbol) [0x0x7ff71b86060f]
+	(No symbol) [0x0x7ff71b8b8854]
+	(No symbol) [0x0x7ff71b8b8b1c]
+	(No symbol) [0x0x7ff71b90c927]
+	(No symbol) [0x0x7ff71b8e126f]
+	(No symbol) [0x0x7ff71b90968a]
+	(No symbol) [0x0x7ff71b8e1003]
+	(No symbol) [0x0x7ff71b8a95d1]
+	(No symbol) [0x0x7ff71b8aa3f3]
+	GetHandleVerifier [0x0x7ff71bd9dc7d+2960429]
+	GetHandleVerifier [0x0x7ff71bd97f3a+2936554]
+	GetHandleVerifier [0x0x7ff71bdb8977+3070247]
+	GetHandleVerifier [0x0x7ff71baf83ce+185214]
+	GetHandleVerifier [0x0x7ff71baffe1f+216527]
+	GetHandleVerifier [0x0x7ff71bae7b24+117460]
+	GetHandleVerifier [0x0x7ff71bae7cdf+117903]
+	GetHandleVerifier [0x0x7ff71bacdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-24 12:17:16,Variant Creation,Open Website,PASS,
+2025-10-24 12:17:17,Variant Creation,Login,PASS,
+2025-10-24 12:17:23,Variant Creation,Navigate To Variant,PASS,
+2025-10-24 12:17:23,Variant Creation,Upload Variant,PASS,
+2025-10-24 12:17:24,Variant Creation,Upload Variant_AR,PASS,
+2025-10-24 12:17:24,Variant Creation,Select Brand,PASS,
+2025-10-24 12:17:34,Variant Creation,Select Model,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_varient.py"", line 98, in test_login_valid
+    wait.until(EC.element_to_be_clickable((By.XPATH, constent.SELECT_MODEL))).click()
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71bade8e5+80021]
+	GetHandleVerifier [0x0x7ff71bade940+80112]
+	(No symbol) [0x0x7ff71b86060f]
+	(No symbol) [0x0x7ff71b8b8854]
+	(No symbol) [0x0x7ff71b8b8b1c]
+	(No symbol) [0x0x7ff71b90c927]
+	(No symbol) [0x0x7ff71b8e126f]
+	(No symbol) [0x0x7ff71b90968a]
+	(No symbol) [0x0x7ff71b8e1003]
+	(No symbol) [0x0x7ff71b8a95d1]
+	(No symbol) [0x0x7ff71b8aa3f3]
+	GetHandleVerifier [0x0x7ff71bd9dc7d+2960429]
+	GetHandleVerifier [0x0x7ff71bd97f3a+2936554]
+	GetHandleVerifier [0x0x7ff71bdb8977+3070247]
+	GetHandleVerifier [0x0x7ff71baf83ce+185214]
+	GetHandleVerifier [0x0x7ff71baffe1f+216527]
+	GetHandleVerifier [0x0x7ff71bae7b24+117460]
+	GetHandleVerifier [0x0x7ff71bae7cdf+117903]
+	GetHandleVerifier [0x0x7ff71bacdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-24 12:18:14,Variant Creation,Open Website,PASS,
+2025-10-24 12:18:16,Variant Creation,Login,PASS,
+2025-10-24 12:18:21,Variant Creation,Navigate To Variant,PASS,
+2025-10-24 12:18:22,Variant Creation,Upload Variant,PASS,
+2025-10-24 12:18:22,Variant Creation,Upload Variant_AR,PASS,
+2025-10-24 12:18:22,Variant Creation,Select Brand,PASS,
+2025-10-24 12:18:32,Variant Creation,Select Model,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_varient.py"", line 98, in test_login_valid
+    wait.until(EC.element_to_be_clickable((By.XPATH, constent.SELECT_MODEL))).click()
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71bade8e5+80021]
+	GetHandleVerifier [0x0x7ff71bade940+80112]
+	(No symbol) [0x0x7ff71b86060f]
+	(No symbol) [0x0x7ff71b8b8854]
+	(No symbol) [0x0x7ff71b8b8b1c]
+	(No symbol) [0x0x7ff71b90c927]
+	(No symbol) [0x0x7ff71b8e126f]
+	(No symbol) [0x0x7ff71b90968a]
+	(No symbol) [0x0x7ff71b8e1003]
+	(No symbol) [0x0x7ff71b8a95d1]
+	(No symbol) [0x0x7ff71b8aa3f3]
+	GetHandleVerifier [0x0x7ff71bd9dc7d+2960429]
+	GetHandleVerifier [0x0x7ff71bd97f3a+2936554]
+	GetHandleVerifier [0x0x7ff71bdb8977+3070247]
+	GetHandleVerifier [0x0x7ff71baf83ce+185214]
+	GetHandleVerifier [0x0x7ff71baffe1f+216527]
+	GetHandleVerifier [0x0x7ff71bae7b24+117460]
+	GetHandleVerifier [0x0x7ff71bae7cdf+117903]
+	GetHandleVerifier [0x0x7ff71bacdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff9127b7374+20]
+	RtlUserThreadStart [0x0x7ff9128fcc91+33]
+
+"
+2025-10-24 12:41:12,Variant Creation,Open Website,PASS,
+2025-10-24 12:41:13,Variant Creation,Login,PASS,
+2025-10-24 12:41:18,Variant Creation,Navigate To Variant,PASS,
+2025-10-24 12:41:19,Variant Creation,Upload Variant,PASS,
+2025-10-24 12:41:19,Variant Creation,Upload Variant_AR,PASS,
+2025-10-24 12:41:19,Variant Creation,Select Brand,PASS,
+2025-10-24 12:41:25,Variant Creation,Select Model,PASS,
+2025-10-24 12:41:25,Variant Creation,Submit Form,PASS,
+2025-10-24 12:41:26,Toast Message,PASS,Record Saved,
+2025-10-24 12:41:41,Variant Creation,Open Website,PASS,
+2025-10-24 12:41:42,Variant Creation,Login,PASS,
+2025-10-24 12:41:47,Variant Creation,Navigate To Variant,PASS,
+2025-10-24 12:41:47,Variant Creation,Upload Variant,PASS,
+2025-10-24 12:41:47,Variant Creation,Upload Variant_AR,PASS,
+2025-10-24 12:41:48,Variant Creation,Select Brand,PASS,
+2025-10-24 12:41:53,Variant Creation,Select Model,PASS,
+2025-10-24 12:41:53,Variant Creation,Submit Form,PASS,
+2025-10-24 12:41:54,Toast Message,PASS,Record Saved,
+2025-10-24 12:47:45,Variant Creation,Open Website,PASS,
+2025-10-24 12:47:46,Variant Creation,Login,PASS,
+2025-10-24 12:47:51,Variant Creation,Navigate To Features,PASS,
+2025-10-24 12:47:51,Variant Creation,Upload Features,PASS,
+2025-10-24 12:47:51,Variant Creation,Upload Features_AR,PASS,
+2025-10-24 12:47:51,Variant Creation,Submit Form,PASS,
+2025-10-24 12:47:52,Toast Message,PASS,Record Saved,
+2025-10-24 12:49:50,Features Creation,Open Website,PASS,
+2025-10-24 12:49:51,Features Creation,Login,PASS,
+2025-10-24 12:49:57,Features Creation,Navigate To Features,PASS,
+2025-10-24 12:49:57,Features Creation,Upload Features,PASS,
+2025-10-24 12:49:57,Features Creation,Upload Features_AR,PASS,
+2025-10-24 12:49:57,Features Creation,Submit Form,PASS,
+2025-10-24 12:49:58,Toast Message,PASS,Record Saved,
+2025-10-24 12:58:39,Body_Type Creation,Open Website,PASS,
+2025-10-24 12:58:41,Body_Type Creation,Login,PASS,
+2025-10-24 12:58:46,Body_Type Creation,Navigate to Body_type,PASS,
+2025-10-24 12:58:46,Body_Type Creation,Upload Profile Image,PASS,
+2025-10-24 12:58:46,Body_Type Creation,Upload Body_type,PASS,
+2025-10-24 12:58:46,Body_Type Creation,Upload Body_type_AR,PASS,
+2025-10-24 12:58:46,Body_Type Creation,Upload Security Deposit,PASS,
+2025-10-24 12:58:47,Body_Type Creation,Submit Form,PASS,
+2025-10-24 12:58:48,Toast Message,PASS,Record Saved,
+2025-10-24 12:59:05,Body_Type Creation,Open Website,PASS,
+2025-10-24 12:59:06,Body_Type Creation,Login,PASS,
+2025-10-24 12:59:12,Body_Type Creation,Navigate to Body_type,PASS,
+2025-10-24 12:59:12,Body_Type Creation,Upload Profile Image,PASS,
+2025-10-24 12:59:12,Body_Type Creation,Upload Body_type,PASS,
+2025-10-24 12:59:12,Body_Type Creation,Upload Body_type_AR,PASS,
+2025-10-24 12:59:12,Body_Type Creation,Upload Security Deposit,PASS,
+2025-10-24 12:59:13,Body_Type Creation,Submit Form,PASS,
+2025-10-24 12:59:14,Toast Message,PASS,Record Saved,
