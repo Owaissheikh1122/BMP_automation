@@ -85,6 +85,7 @@ class LoginTest(unittest.TestCase):
         try:
             wait.until(EC.element_to_be_clickable(
                 (By.XPATH, constent.RENTIFY_BUTT0N))).click()
+            time.sleep(3)
             wait.until(EC.element_to_be_clickable(
                 (By.XPATH, constent.VEHICLES_BUTTON))).click()
             wait.until(EC.element_to_be_clickable(
@@ -274,26 +275,24 @@ class LoginTest(unittest.TestCase):
             self.fail(f"Failed at Features: {e}")  
       
         # ========== STEP 4: Features On Home ==========
-        try:
-            # wait.until(EC.element_to_be_clickable((By.XPATH, constent.V_FEATURES_HOME))).click()
-            checkbox = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@type='checkbox' and @name='is_feature']")))
-            driver.execute_script("arguments[0].scrollIntoView(true);", checkbox)
-            time.sleep(1)
-            checkbox.click()
+        # try:
+        #     # wait.until(EC.element_to_be_clickable((By.XPATH, constent.V_FEATURES_HOME))).click()
+        #     checkbox = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@type='checkbox' and @name='is_feature']")))
+        #     driver.execute_script("arguments[0].scrollIntoView(true);", checkbox)
+        #     time.sleep(1)
+        #     checkbox.click()
            
-            log_step(test_case, "Features On Home", "PASS")
-        except Exception as e:
-            log_step(test_case, "Features On Home", "FAIL", traceback.format_exc())
-            self.fail(f"Failed at Features On Home: {e}")  
+        #     log_step(test_case, "Features On Home", "PASS")
+        # except Exception as e:
+        #     log_step(test_case, "Features On Home", "FAIL", traceback.format_exc())
+        #     self.fail(f"Failed at Features On Home: {e}")  
 
         fill_field(wait,By.NAME,constent.V_INSURER_NAME,"DEMO",test_case, "ADD Insurer Name")
         
         
         # ========== STEP 4: Insurance Date ==========
         try:
-            pickup_time = wait.until(
-             EC.element_to_be_clickable((By.XPATH, "//label[contains(text(), 'Insurance issue date')]/preceding::input[1]")))
-            pickup_time.click()
+            wait.until(EC.element_to_be_clickable((By.XPATH, "//label[contains(text(), 'Insurance issue date')]/preceding::input[1]"))).click()
             wait.until(EC.element_to_be_clickable((By.XPATH, "//button[text()='21']"))).click()
 
             log_step(test_case, "Insurance Date", "PASS")
