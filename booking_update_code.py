@@ -13,16 +13,22 @@ import random
 
 random_customer = [
 
-    "Ehsab haq (sitereview2024@gmail.com)",
-    "Rashed Al Mansoori (rashed.mansoori@emiratesmail.ae)",
-    "Adeel Khan (adeel.khan87@gmail.com)",
-    "Sana Qureshi (sana.qureshi22@hotmail.com)"
+    # "Ehsab haq (sitereview2024@gmail.com)",
+    # "Rashed Al Mansoori (rashed.mansoori@emiratesmail.ae)",
+    # "Adeel Khan (adeel.khan87@gmail.com)",
+    # "Sana Qureshi (sana.qureshi22@hotmail.com)",
+    "owais ss (sazn2000@gmail.co)",
+    "Muhammad Hassan Raza (mhassanrazas@gmail.com)"
+    
 
 ]
 selected_customer = random.choice(random_customer)
 
 random_cars = [
 
+    "Skoda Octavia 1.6 TDI Ambition",
+    "Subaru Forester 2.5i Premium AWD",
+    "Dacia Duster 1.3 TCe Prestige",
     "Honda Civic EX",
     "Mercedes-Benz C",
     "Mercedes-Benz E-Class E350",
@@ -80,15 +86,13 @@ class LoginTest(unittest.TestCase):
 
         # ========== STEP 2: Login ==========
         try:
-            if constent.EMAIL == "automobile@businessesify.com" and constent.PASSWORD=="Polo@1234":
-                wait.until(EC.presence_of_element_located((By.NAME, constent.EMAIL_NAME))
+            wait.until(EC.presence_of_element_located((By.NAME, constent.EMAIL_NAME))
                         ).send_keys(constent.EMAIL)
-                driver.find_element(By.NAME, constent.PASSWORD_NAME).send_keys(constent.PASSWORD)
-                wait.until(EC.element_to_be_clickable(
-                    (By.XPATH, constent.LOGIN_SUBMIT_BUTTON_XPATH))).click()
-                log_step(test_case, "Login", "PASS")
-            else :
-                log_step(test_case, "Login", "FAIL")
+            driver.find_element(By.NAME, constent.PASSWORD_NAME).send_keys(constent.PASSWORD)
+            wait.until(EC.element_to_be_clickable(
+                (By.XPATH, constent.LOGIN_SUBMIT_BUTTON_XPATH))).click()
+            log_step(test_case, "Login", "PASS")
+            
 
         except Exception as e:
             log_step(test_case, "Login", "FAIL", traceback.format_exc())
@@ -236,7 +240,8 @@ class LoginTest(unittest.TestCase):
             return_time = wait.until(
              EC.element_to_be_clickable((By.XPATH, "//label[normalize-space(text())='Return Time']/preceding-sibling::div//input")))
             return_time.click()
-            wait.until(EC.element_to_be_clickable((By.XPATH, "//label[normalize-space(text())='Return Time']/ancestor::div[contains(@class,'group')]//button[@aria-label='Thursday, October 30th, 2025']"))).click()
+            # wait.until(EC.element_to_be_clickable((By.XPATH, "//label[normalize-space(text())='Return Time']/ancestor::div[contains(@class,'group')]//button[@aria-label='Thursday, November 27th, 2025']"))).click()
+            wait.until(EC.element_to_be_clickable((By.XPATH, "(//button[text()='26'])[2]"))).click()
             wait.until(EC.element_to_be_clickable((By.XPATH, "//label[normalize-space(text())='Return Time']/ancestor::div[contains(@class,'group')]//button[normalize-space(text())='Apply']"))).click()
             log_step(test_case, "Return Time", "PASS")
 

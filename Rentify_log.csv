@@ -2060,3 +2060,45 @@ Stacktrace:
 	BaseThreadInitThunk [0x0x7ff9127b7374+20]
 	RtlUserThreadStart [0x0x7ff9128fcc91+33]
 ",
+2025-11-11 17:00:30,Vehicles Add,Open Website,PASS,
+2025-11-11 17:00:31,Vehicles Add,Login,PASS,
+2025-11-11 17:00:38,Vehicles Add,Navigate to Vehicles,PASS,
+2025-11-11 17:00:38,Vehicles Add,Upload Vehicles Image,PASS,
+2025-11-11 17:00:38,Vehicles Add,Upload Vehicles Thumb Image,PASS,
+2025-11-11 17:00:38,Vehicles Add,Upload Reg_Doc,PASS,
+2025-11-11 17:00:38,Vehicles Add,Upload Car Name,PASS,
+2025-11-11 17:00:39,Vehicles Add,Upload Car Name_AR,PASS,
+2025-11-11 17:00:39,Vehicles Add,Select Brand,PASS,
+2025-11-11 17:00:53,Vehicles Add,Select Model,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\Rentify_vehicle.py"", line 120, in test_login_valid
+    wait.until(EC.element_to_be_clickable(
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (By.XPATH, f""//div[text()='Skoda Fabia']""))).click()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71121e8e5+80021]
+	GetHandleVerifier [0x0x7ff71121e940+80112]
+	(No symbol) [0x0x7ff710fa060f]
+	(No symbol) [0x0x7ff710ff8854]
+	(No symbol) [0x0x7ff710ff8b1c]
+	(No symbol) [0x0x7ff71104c927]
+	(No symbol) [0x0x7ff71102126f]
+	(No symbol) [0x0x7ff71104968a]
+	(No symbol) [0x0x7ff711021003]
+	(No symbol) [0x0x7ff710fe95d1]
+	(No symbol) [0x0x7ff710fea3f3]
+	GetHandleVerifier [0x0x7ff7114ddc7d+2960429]
+	GetHandleVerifier [0x0x7ff7114d7f3a+2936554]
+	GetHandleVerifier [0x0x7ff7114f8977+3070247]
+	GetHandleVerifier [0x0x7ff7112383ce+185214]
+	GetHandleVerifier [0x0x7ff71123fe1f+216527]
+	GetHandleVerifier [0x0x7ff711227b24+117460]
+	GetHandleVerifier [0x0x7ff711227cdf+117903]
+	GetHandleVerifier [0x0x7ff71120dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffba64f7374+20]
+	RtlUserThreadStart [0x0x7ffba7ebcc91+33]
+
+"

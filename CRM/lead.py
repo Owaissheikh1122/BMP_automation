@@ -10,42 +10,11 @@ import csv
 import traceback
 import random
 
-
-random_customer = [
-
-    "Ehsab haq (sitereview2024@gmail.com)",
-    "Rashed Al Mansoori (rashed.mansoori@emiratesmail.ae)",
-    "Adeel Khan (adeel.khan87@gmail.com)",
-    "Sana Qureshi (sana.qureshi22@hotmail.com)"
-
-]
-selected_customer = random.choice(random_customer)
-
-random_cars = [
-
-    "Honda Civic EX",
-    "Mercedes-Benz C",
-    "Mercedes-Benz E-Class E350",
-    "Dodge Charger R/T",
-    "Toyota Corolla Altis",
-    "Toyota RAV4 Adventure",
-    "Toyota Land Cruiser Prado",
-    "Hyundai Elantra Sport",
-    "Vauxhall Corsa SE",
-    "Mini Cooper S",
-    "Land Rover Defender P300",
-    "Suzuki Swift GLX",
-    "Suzuki Vitara GL+"
-]
-selected_cars = random.choice(random_cars)
 random_number = random.randint(1, 99)
-unique_email = f"test_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}@example.com"
-
-
 
 def log_step(test_case, step, status, message=""):
     """Log steps into a CSV file"""
-    with open("Rentify_log.csv", mode="a", newline="", encoding="utf-8") as file:
+    with open("CRM_log.csv", mode="a", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow([
             datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -61,6 +30,16 @@ def fill_field(wait, locator_type, locator, value, test_case, step_name):
     except Exception as e:
         log_step(test_case, step_name, "FAIL", traceback.format_exc())
 
+def drop_down(wait, locator_type, locator,value, test_case, step_name):
+    """Common function to fill form fields with logging and error handling"""
+    try:
+        wait.until(EC.element_to_be_clickable((locator_type, locator))).click()
+        wait.until(EC.element_to_be_clickable((locator_type, value))).click()
+        log_step(test_case, step_name, "PASS")
+    
+    except Exception as e:
+        log_step(test_case, step_name, "FAIL", traceback.format_exc())
+
 
 class LoginTest(unittest.TestCase):
     def setUp(self):
@@ -71,7 +50,7 @@ class LoginTest(unittest.TestCase):
     def test_login_valid(self):
         driver = self.driver
         wait = self.wait
-        test_case = "Brand Creation"
+        test_case = "Lead Creation"
 
         # ========== STEP 1: Open Website ==========
         try:
@@ -93,40 +72,39 @@ class LoginTest(unittest.TestCase):
         except Exception as e:
             log_step(test_case, "Login", "FAIL", traceback.format_exc())
             self.fail(f"Failed at Login: {e}")
-            
 
-        # ========== STEP 3: Navigate to Rentify ==========
+        # ========== STEP 3: Navigate to CRM ==========
         try:
             wait.until(EC.element_to_be_clickable(
-                (By.XPATH, constent.RENTIFY_BUTT0N))).click()
+                (By.XPATH, constent.CRM_BUTT0N))).click()
             wait.until(EC.element_to_be_clickable(
-                (By.XPATH, constent.BRAND_BUTTON))).click()
+                (By.XPATH, constent.LEAD_BUTTON))).click()
             wait.until(EC.element_to_be_clickable(
-                (By.XPATH, constent.ADD_BRAND_BUTTON))).click()
-            log_step(test_case, "Navigate to Brand", "PASS")
+                (By.XPATH, constent.ADD_LEADS_BUTTON))).click()
+            log_step(test_case, "Navigate To Leads", "PASS")
         except Exception as e:
-            log_step(test_case, "Navigate to Brand", "FAIL", traceback.format_exc())
-            self.fail(f"Failed at Navigate to Brand: {e}")
-
-        
+            log_step(test_case, "Navigate To Leads", "FAIL", traceback.format_exc())
+            self.fail(f"Failed at Navigate To Leads: {e}")
 
        
-        # ========== STEP 4: Enter Brand Detail ==========
+        # ========== STEP 4: Enter Leads Detail ==========
+        drop_down(wait,By.XPATH,"//label[normalize-space()='Lead Owner']/parent::div//input","//div[text()='owais sheikh (tapanew768@bitfami.com)']",test_case,"Select Lead Owner")
+        drop_down(wait,By.XPATH,"//label[normalize-space()='Assigned To']/parent::div//input","//div[text()='owais sheikh (tapanew768@bitfami.com)']",test_case,"Select Lead Owner")
         fill_field(wait,By.XPATH,constent.UPLOAD_PROFILE,r"C:\Users\Awais\Pictures\image\profile\profilegirl.jpg",test_case, "Upload Profile Image")
-        fill_field(wait,By.NAME,constent.BRAND_NAME,f"Brand {random_number}",test_case, "Upload Brand")
-        fill_field(wait,By.NAME,constent.BRAND_AR_NAME,f"Brand AR {random_number}",test_case, "Upload Brand_AR")
+        fill_field(wait,By.NAME,constent.MODEL_NAME,f"Models {random_number}",test_case, "Upload Models")
+        fill_field(wait,By.NAME,constent.MODEL_AR_NAME,f"Model AR {random_number}",test_case, "Upload Model_AR")
 
-        # ========== STEP 4: Select Country ==========
+        # ========== STEP 4: Select Brand ==========
         try:
-            wait.until(EC.element_to_be_clickable((By.XPATH, constent.SELECT_COUNTRY))).click()
+            wait.until(EC.element_to_be_clickable((By.XPATH, constent.SELECT_BRAND))).click()
             wait.until(EC.element_to_be_clickable(
-                (By.XPATH, "//div[text()='American']"))).click()
+                (By.XPATH, "//div[text()='Fiat']"))).click()
             
             
-            log_step(test_case, "Select Country", "PASS")
+            log_step(test_case, "Select Brand", "PASS")
         except Exception as e:
-            log_step(test_case, "Select Country", "FAIL", traceback.format_exc())
-            self.fail(f"Failed at Select Country: {e}")  
+            log_step(test_case, "Select Brand", "FAIL", traceback.format_exc())
+            self.fail(f"Failed at Select Brand: {e}")  
 
       
 
@@ -161,7 +139,7 @@ class LoginTest(unittest.TestCase):
 
 if __name__ == "__main__":
     # Create CSV header if not exists
-    with open("Rentify_log.csv", mode="a", newline="", encoding="utf-8") as file:
+    with open("CRM_log.csv", mode="a", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         if file.tell() == 0:  # agar file empty hai to header likho
             writer.writerow(["Timestamp", "Test Case", "Step", "Status", "Message"])

@@ -23,6 +23,9 @@ selected_customer = random.choice(random_customer)
 
 random_cars = [
 
+    "Skoda Octavia 1.6 TDI Ambition",
+    "Subaru Forester 2.5i Premium AWD",
+    "Dacia Duster 1.3 TCe Prestige",
     "Honda Civic EX",
     "Mercedes-Benz C",
     "Mercedes-Benz E-Class E350",
@@ -83,15 +86,13 @@ class LoginTest(unittest.TestCase):
 
         # ========== STEP 2: Login ==========
         try:
-            if constent.EMAIL == "automobile@businessesify.com" and constent.PASSWORD=="Polo@1234":
-                wait.until(EC.presence_of_element_located((By.NAME, constent.EMAIL_NAME))
+            wait.until(EC.presence_of_element_located((By.NAME, constent.EMAIL_NAME))
                         ).send_keys(constent.EMAIL)
-                driver.find_element(By.NAME, constent.PASSWORD_NAME).send_keys(constent.PASSWORD)
-                wait.until(EC.element_to_be_clickable(
-                    (By.XPATH, constent.LOGIN_SUBMIT_BUTTON_XPATH))).click()
-                log_step(test_case, "Login", "PASS")
-            else :
-                log_step(test_case, "Login", "FAIL")
+            driver.find_element(By.NAME, constent.PASSWORD_NAME).send_keys(constent.PASSWORD)
+            wait.until(EC.element_to_be_clickable(
+                (By.XPATH, constent.LOGIN_SUBMIT_BUTTON_XPATH))).click()
+            log_step(test_case, "Login", "PASS")
+        
 
         except Exception as e:
             log_step(test_case, "Login", "FAIL", traceback.format_exc())

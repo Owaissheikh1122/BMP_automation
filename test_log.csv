@@ -3284,3 +3284,225 @@ Stacktrace:
 	BaseThreadInitThunk [0x0x7ffc13cd7374+20]
 	RtlUserThreadStart [0x0x7ffc14f7cc91+33]
  | Screenshot: screenshots/Bank account verification_20251012_191935.png"
+2025-11-04 11:17:26,Affiliate Creation,Open Website,PASS,
+2025-11-04 11:17:26,Affiliate Creation,Login,FAIL,
+2025-11-04 11:17:36,Affiliate Creation,Navigate to Affiliate,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\affiliate_update_code.py"", line 69, in test_login_valid
+    wait.until(EC.element_to_be_clickable(
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (By.XPATH, constent.AFFILIATE_BUTT0N))).click()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff73ee2e8e5+80021]
+	GetHandleVerifier [0x0x7ff73ee2e940+80112]
+	(No symbol) [0x0x7ff73ebb060f]
+	(No symbol) [0x0x7ff73ec08854]
+	(No symbol) [0x0x7ff73ec08b1c]
+	(No symbol) [0x0x7ff73ec5c927]
+	(No symbol) [0x0x7ff73ec3126f]
+	(No symbol) [0x0x7ff73ec5968a]
+	(No symbol) [0x0x7ff73ec31003]
+	(No symbol) [0x0x7ff73ebf95d1]
+	(No symbol) [0x0x7ff73ebfa3f3]
+	GetHandleVerifier [0x0x7ff73f0edc7d+2960429]
+	GetHandleVerifier [0x0x7ff73f0e7f3a+2936554]
+	GetHandleVerifier [0x0x7ff73f108977+3070247]
+	GetHandleVerifier [0x0x7ff73ee483ce+185214]
+	GetHandleVerifier [0x0x7ff73ee4fe1f+216527]
+	GetHandleVerifier [0x0x7ff73ee37b24+117460]
+	GetHandleVerifier [0x0x7ff73ee37cdf+117903]
+	GetHandleVerifier [0x0x7ff73ee1dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffba64f7374+20]
+	RtlUserThreadStart [0x0x7ffba7ebcc91+33]
+
+"
+2025-11-04 11:21:03,Affiliate Creation,Open Website,PASS,
+2025-11-04 11:21:05,Affiliate Creation,Login,PASS,
+2025-11-04 11:21:09,Affiliate Creation,Navigate to Affiliate,PASS,
+2025-11-04 11:21:10,Affiliate Creation,Upload Profile Image,PASS,
+2025-11-04 11:21:10,Affiliate Creation,Upload Address,PASS,
+2025-11-04 11:21:10,Affiliate Creation,Upload Insurance Certificate,PASS,
+2025-11-04 11:21:10,Affiliate Creation,Upload Bank Verification,PASS,
+2025-11-04 11:21:10,Affiliate Creation,Enter First Name,PASS,
+2025-11-04 11:21:11,Affiliate Creation,Enter Last Name,PASS,
+2025-11-04 11:21:11,Affiliate Creation,Enter Phone Number,PASS,
+2025-11-04 11:21:12,Affiliate Creation,Enter Your Email,PASS,
+2025-11-04 11:21:23,Affiliate Creation,Select Country & City,FAIL,"Traceback (most recent call last):
+  File ""d:\OWAIS\python\automation\BMP\BMP_automation\affiliate_update_code.py"", line 108, in test_login_valid
+    wait.until(EC.element_to_be_clickable(
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (By.XPATH, ""//div[text()='United Arab Emirates']""))).click()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Awais\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py"", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff73ee2e8e5+80021]
+	GetHandleVerifier [0x0x7ff73ee2e940+80112]
+	(No symbol) [0x0x7ff73ebb060f]
+	(No symbol) [0x0x7ff73ec08854]
+	(No symbol) [0x0x7ff73ec08b1c]
+	(No symbol) [0x0x7ff73ec5c927]
+	(No symbol) [0x0x7ff73ec3126f]
+	(No symbol) [0x0x7ff73ec5968a]
+	(No symbol) [0x0x7ff73ec31003]
+	(No symbol) [0x0x7ff73ebf95d1]
+	(No symbol) [0x0x7ff73ebfa3f3]
+	GetHandleVerifier [0x0x7ff73f0edc7d+2960429]
+	GetHandleVerifier [0x0x7ff73f0e7f3a+2936554]
+	GetHandleVerifier [0x0x7ff73f108977+3070247]
+	GetHandleVerifier [0x0x7ff73ee483ce+185214]
+	GetHandleVerifier [0x0x7ff73ee4fe1f+216527]
+	GetHandleVerifier [0x0x7ff73ee37b24+117460]
+	GetHandleVerifier [0x0x7ff73ee37cdf+117903]
+	GetHandleVerifier [0x0x7ff73ee1dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffba64f7374+20]
+	RtlUserThreadStart [0x0x7ffba7ebcc91+33]
+
+"
+2025-11-04 11:21:23,Affiliate Creation,Enter Driving License,PASS,
+2025-11-04 11:21:24,Affiliate Creation,Enter Driving License Expiry,PASS,
+2025-11-04 11:21:25,Affiliate Creation,Enter CNIC No.,PASS,
+2025-11-04 11:21:25,Affiliate Creation,Enter CNIC Expiry,PASS,
+2025-11-04 11:21:25,Affiliate Creation,Enter Business Address,PASS,
+2025-11-04 11:21:25,Affiliate Creation,Enter Mailing Address,PASS,
+2025-11-04 11:21:26,Affiliate Creation,Enter Type Of Affiliate,PASS,
+2025-11-04 11:21:26,Affiliate Creation,Enter Affiliate Vehicles,PASS,
+2025-11-04 11:21:26,Affiliate Creation,Enter Comission Type,PASS,
+2025-11-04 11:21:27,Affiliate Creation,Select Currency,PASS,
+2025-11-04 11:21:27,Affiliate Creation,Enter Bank Name,PASS,
+2025-11-04 11:21:27,Affiliate Creation,Enter Account Title,PASS,
+2025-11-04 11:21:27,Affiliate Creation,Enter IBAN No.,PASS,
+2025-11-04 11:21:28,Affiliate Creation,Enter SWIFT/BIC Code,PASS,
+2025-11-04 11:21:28,Affiliate Creation,Enter Payment Method,PASS,
+2025-11-04 11:21:28,Affiliate Creation,Enter Payment Terms,PASS,
+2025-11-04 11:21:29,Affiliate Creation,Select Contract Start Date,PASS,
+2025-11-04 11:21:29,Affiliate Creation,Select Contract End Date,PASS,
+2025-11-04 11:21:29,Affiliate Creation,Note / Special Instruction,PASS,
+2025-11-04 11:21:29,Affiliate Creation,Submit Form,PASS,
+2025-11-04 11:21:35,Toast Message,FAIL,"No toast captured: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff73ee2e8e5+80021]
+	GetHandleVerifier [0x0x7ff73ee2e940+80112]
+	(No symbol) [0x0x7ff73ebb060f]
+	(No symbol) [0x0x7ff73ec08854]
+	(No symbol) [0x0x7ff73ec08b1c]
+	(No symbol) [0x0x7ff73ec5c927]
+	(No symbol) [0x0x7ff73ec3126f]
+	(No symbol) [0x0x7ff73ec5968a]
+	(No symbol) [0x0x7ff73ec31003]
+	(No symbol) [0x0x7ff73ebf95d1]
+	(No symbol) [0x0x7ff73ebfa3f3]
+	GetHandleVerifier [0x0x7ff73f0edc7d+2960429]
+	GetHandleVerifier [0x0x7ff73f0e7f3a+2936554]
+	GetHandleVerifier [0x0x7ff73f108977+3070247]
+	GetHandleVerifier [0x0x7ff73ee483ce+185214]
+	GetHandleVerifier [0x0x7ff73ee4fe1f+216527]
+	GetHandleVerifier [0x0x7ff73ee37b24+117460]
+	GetHandleVerifier [0x0x7ff73ee37cdf+117903]
+	GetHandleVerifier [0x0x7ff73ee1dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffba64f7374+20]
+	RtlUserThreadStart [0x0x7ffba7ebcc91+33]
+",
+2025-11-04 11:21:50,Affiliate Creation,Open Website,PASS,
+2025-11-04 11:21:51,Affiliate Creation,Login,PASS,
+2025-11-04 11:21:55,Affiliate Creation,Navigate to Affiliate,PASS,
+2025-11-04 11:21:55,Affiliate Creation,Upload Profile Image,PASS,
+2025-11-04 11:21:55,Affiliate Creation,Upload Address,PASS,
+2025-11-04 11:21:55,Affiliate Creation,Upload Insurance Certificate,PASS,
+2025-11-04 11:21:56,Affiliate Creation,Upload Bank Verification,PASS,
+2025-11-04 11:21:56,Affiliate Creation,Enter First Name,PASS,
+2025-11-04 11:21:56,Affiliate Creation,Enter Last Name,PASS,
+2025-11-04 11:21:56,Affiliate Creation,Enter Phone Number,PASS,
+2025-11-04 11:21:57,Affiliate Creation,Enter Your Email,PASS,
+2025-11-04 11:22:03,Affiliate Creation,Select Country & City,PASS,
+2025-11-04 11:22:04,Affiliate Creation,Enter Driving License,PASS,
+2025-11-04 11:22:04,Affiliate Creation,Enter Driving License Expiry,PASS,
+2025-11-04 11:22:04,Affiliate Creation,Enter CNIC No.,PASS,
+2025-11-04 11:22:05,Affiliate Creation,Enter CNIC Expiry,PASS,
+2025-11-04 11:22:05,Affiliate Creation,Enter Business Address,PASS,
+2025-11-04 11:22:05,Affiliate Creation,Enter Mailing Address,PASS,
+2025-11-04 11:22:06,Affiliate Creation,Enter Type Of Affiliate,PASS,
+2025-11-04 11:22:06,Affiliate Creation,Enter Affiliate Vehicles,PASS,
+2025-11-04 11:22:06,Affiliate Creation,Enter Comission Type,PASS,
+2025-11-04 11:22:06,Affiliate Creation,Select Currency,PASS,
+2025-11-04 11:22:06,Affiliate Creation,Enter Bank Name,PASS,
+2025-11-04 11:22:07,Affiliate Creation,Enter Account Title,PASS,
+2025-11-04 11:22:07,Affiliate Creation,Enter IBAN No.,PASS,
+2025-11-04 11:22:07,Affiliate Creation,Enter SWIFT/BIC Code,PASS,
+2025-11-04 11:22:07,Affiliate Creation,Enter Payment Method,PASS,
+2025-11-04 11:22:07,Affiliate Creation,Enter Payment Terms,PASS,
+2025-11-04 11:22:08,Affiliate Creation,Select Contract Start Date,PASS,
+2025-11-04 11:22:08,Affiliate Creation,Select Contract End Date,PASS,
+2025-11-04 11:22:08,Affiliate Creation,Note / Special Instruction,PASS,
+2025-11-04 11:22:08,Affiliate Creation,Submit Form,PASS,
+2025-11-04 11:22:11,Toast Message,PASS,Record Saved,
+2025-11-04 18:29:33,Affiliate Creation,Open Website,PASS,
+2025-11-04 18:29:35,Affiliate Creation,Login,PASS,
+2025-11-04 18:29:38,Affiliate Creation,Navigate to Affiliate,PASS,
+2025-11-04 18:29:38,Affiliate Creation,Upload Profile Image,PASS,
+2025-11-04 18:29:39,Affiliate Creation,Upload Address,PASS,
+2025-11-04 18:29:39,Affiliate Creation,Upload Insurance Certificate,PASS,
+2025-11-04 18:29:39,Affiliate Creation,Upload Bank Verification,PASS,
+2025-11-04 18:29:39,Affiliate Creation,Enter First Name,PASS,
+2025-11-04 18:29:39,Affiliate Creation,Enter Last Name,PASS,
+2025-11-04 18:29:40,Affiliate Creation,Enter Phone Number,PASS,
+2025-11-04 18:29:40,Affiliate Creation,Enter Your Email,PASS,
+2025-11-04 18:29:47,Affiliate Creation,Select Country & City,PASS,
+2025-11-04 18:29:47,Affiliate Creation,Enter Driving License,PASS,
+2025-11-04 18:29:47,Affiliate Creation,Enter Driving License Expiry,PASS,
+2025-11-04 18:29:48,Affiliate Creation,Enter CNIC No.,PASS,
+2025-11-04 18:29:48,Affiliate Creation,Enter CNIC Expiry,PASS,
+2025-11-04 18:29:48,Affiliate Creation,Enter Business Address,PASS,
+2025-11-04 18:29:48,Affiliate Creation,Enter Mailing Address,PASS,
+2025-11-04 18:29:49,Affiliate Creation,Enter Type Of Affiliate,PASS,
+2025-11-04 18:29:49,Affiliate Creation,Enter Affiliate Vehicles,PASS,
+2025-11-04 18:29:49,Affiliate Creation,Enter Comission Type,PASS,
+2025-11-04 18:29:50,Affiliate Creation,Select Currency,PASS,
+2025-11-04 18:29:50,Affiliate Creation,Enter Bank Name,PASS,
+2025-11-04 18:29:50,Affiliate Creation,Enter Account Title,PASS,
+2025-11-04 18:29:50,Affiliate Creation,Enter IBAN No.,PASS,
+2025-11-04 18:29:50,Affiliate Creation,Enter SWIFT/BIC Code,PASS,
+2025-11-04 18:29:50,Affiliate Creation,Enter Payment Method,PASS,
+2025-11-04 18:29:51,Affiliate Creation,Enter Payment Terms,PASS,
+2025-11-04 18:29:51,Affiliate Creation,Select Contract Start Date,PASS,
+2025-11-04 18:29:51,Affiliate Creation,Select Contract End Date,PASS,
+2025-11-04 18:29:52,Affiliate Creation,Note / Special Instruction,PASS,
+2025-11-04 18:29:52,Affiliate Creation,Submit Form,PASS,
+2025-11-04 18:29:55,Toast Message,PASS,,
+2025-11-04 19:17:42,Affiliate Creation,Open Website,PASS,
+2025-11-04 19:17:44,Affiliate Creation,Login,PASS,
+2025-11-04 19:17:48,Affiliate Creation,Navigate to Affiliate,PASS,
+2025-11-04 19:17:49,Affiliate Creation,Upload Profile Image,PASS,
+2025-11-04 19:17:49,Affiliate Creation,Upload Address,PASS,
+2025-11-04 19:17:49,Affiliate Creation,Upload Insurance Certificate,PASS,
+2025-11-04 19:17:49,Affiliate Creation,Upload Bank Verification,PASS,
+2025-11-04 19:17:50,Affiliate Creation,Enter First Name,PASS,
+2025-11-04 19:17:50,Affiliate Creation,Enter Last Name,PASS,
+2025-11-04 19:17:51,Affiliate Creation,Enter Phone Number,PASS,
+2025-11-04 19:17:51,Affiliate Creation,Enter Your Email,PASS,
+2025-11-04 19:17:57,Affiliate Creation,Select Country & City,PASS,
+2025-11-04 19:17:58,Affiliate Creation,Enter Driving License,PASS,
+2025-11-04 19:17:58,Affiliate Creation,Enter Driving License Expiry,PASS,
+2025-11-04 19:17:58,Affiliate Creation,Enter CNIC No.,PASS,
+2025-11-04 19:17:59,Affiliate Creation,Enter CNIC Expiry,PASS,
+2025-11-04 19:17:59,Affiliate Creation,Enter Business Address,PASS,
+2025-11-04 19:18:00,Affiliate Creation,Enter Mailing Address,PASS,
+2025-11-04 19:18:00,Affiliate Creation,Enter Type Of Affiliate,PASS,
+2025-11-04 19:18:00,Affiliate Creation,Enter Affiliate Vehicles,PASS,
+2025-11-04 19:18:00,Affiliate Creation,Enter Comission Type,PASS,
+2025-11-04 19:18:01,Affiliate Creation,Select Currency,PASS,
+2025-11-04 19:18:01,Affiliate Creation,Enter Bank Name,PASS,
+2025-11-04 19:18:01,Affiliate Creation,Enter Account Title,PASS,
+2025-11-04 19:18:02,Affiliate Creation,Enter IBAN No.,PASS,
+2025-11-04 19:18:02,Affiliate Creation,Enter SWIFT/BIC Code,PASS,
+2025-11-04 19:18:02,Affiliate Creation,Enter Payment Method,PASS,
+2025-11-04 19:18:02,Affiliate Creation,Enter Payment Terms,PASS,
+2025-11-04 19:18:03,Affiliate Creation,Select Contract Start Date,PASS,
+2025-11-04 19:18:03,Affiliate Creation,Select Contract End Date,PASS,
+2025-11-04 19:18:03,Affiliate Creation,Note / Special Instruction,PASS,
+2025-11-04 19:18:04,Affiliate Creation,Submit Form,PASS,
+2025-11-04 19:18:07,Toast Message,PASS,Record Saved,

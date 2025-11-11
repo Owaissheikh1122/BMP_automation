@@ -8,7 +8,7 @@ import constent
 import datetime
 import csv
 import traceback
-
+import random
 
 def log_step(test_case, step, status, message=""):
     """Log steps into a CSV file"""
@@ -28,6 +28,7 @@ def fill_field(wait, locator_type, locator, value, test_case, step_name):
     except Exception as e:
         log_step(test_case, step_name, "FAIL", traceback.format_exc())
 
+random_number = random.randint(1, 99)
 
 class LoginTest(unittest.TestCase):
     def setUp(self):
@@ -50,15 +51,14 @@ class LoginTest(unittest.TestCase):
 
         # ========== STEP 2: Login ==========
         try:
-            if constent.EMAIL == "automobile@businessesify.com" and constent.PASSWORD=="Polo@1234":
-                wait.until(EC.presence_of_element_located((By.NAME, constent.EMAIL_NAME))
-                        ).send_keys(constent.EMAIL)
-                driver.find_element(By.NAME, constent.PASSWORD_NAME).send_keys(constent.PASSWORD)
-                wait.until(EC.element_to_be_clickable(
-                    (By.XPATH, constent.LOGIN_SUBMIT_BUTTON_XPATH))).click()
-                log_step(test_case, "Login", "PASS")
-            else :
-                log_step(test_case, "Login", "FAIL")
+        
+            wait.until(EC.presence_of_element_located((By.NAME, constent.EMAIL_NAME))
+                    ).send_keys(constent.EMAIL)
+            driver.find_element(By.NAME, constent.PASSWORD_NAME).send_keys(constent.PASSWORD)
+            wait.until(EC.element_to_be_clickable(
+                (By.XPATH, constent.LOGIN_SUBMIT_BUTTON_XPATH))).click()
+            log_step(test_case, "Login", "PASS")
+           
 
         except Exception as e:
             log_step(test_case, "Login", "FAIL", traceback.format_exc())
@@ -90,7 +90,7 @@ class LoginTest(unittest.TestCase):
         fill_field(wait,By.XPATH,constent.BANK_VER,r"C:\Users\Awais\Pictures\image\profile\profilegirl.jpg",test_case, "Upload Bank Verification")
         # ========== STEP 5: First Name ==========
 
-        fill_field(wait,By.NAME,constent.FIRST_NAME,constent.FIRST_KEY,test_case, "Enter First Name")
+        fill_field(wait,By.NAME,constent.FIRST_NAME,f"{constent.FIRST_KEY} - {random_number}",test_case, "Enter First Name")
 
         # ========== STEP 6: Last Name ==========
         fill_field(wait,By.NAME,constent.LAST_NAME,constent.LAST_KEY,test_case, "Enter Last Name")
@@ -106,7 +106,7 @@ class LoginTest(unittest.TestCase):
         try:
             wait.until(EC.element_to_be_clickable((By.NAME, "country_id"))).click()
             wait.until(EC.element_to_be_clickable(
-                (By.XPATH, "//div[text()='United Arab Emirates']"))).click()
+                (By.XPATH, "//div[text()='UAE']"))).click()
             time.sleep(5)
             wait.until(EC.element_to_be_clickable((By.NAME, "city_id"))).click()
             wait.until(EC.presence_of_element_located(
